@@ -1,4 +1,11 @@
 <?php require_once 'products.php' ?>
+<?php
+  $sum = 0;
+  foreach($products as $product) {
+    $price = $product["price"] * $_POST[$product["id"]];
+    $sum = $sum + $price;
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +33,7 @@
         <?php endforeach; ?>
       </div>
       <div class="btn-footer bg-gray">
-        <input class="checkout-btn flex justify-between" value="決済する">
+        <input class="checkout-btn flex justify-between" value="<?php echo $sum."円を決済する";?>">
       </div>
     </div>
   </div>
