@@ -12,17 +12,30 @@
       <h1 class="title">DailyTrial Shopping</h1>
       <div class="cards-container">
         <?php
-          $product = [
+          $productA = [
             "name" => "アボカド",
             "price" => 230,
             "image" => "./images/image_1.jpg"
-          ]
+          ];
+          $productB = [
+            "name" => "オレンジ",
+            "price" => 100,
+            "image" => "./images/image_2.jpg"
+          ];
         ?>
         <div class="card">
-          <img class="card-image" src="<?php echo $product["image"] ?>" alt="">
-          <p class="card-title"><?php echo $product["name"] ?></p>
+          <img class="card-image" src="<?php echo $productA["image"] ?>" alt="">
+          <p class="card-title"><?php echo $productA["name"] ?></p>
           <div class="flex justify-between">
-            <p class="card-price"><?php echo $product["price"]."円" ?></p>
+            <p class="card-price"><?php echo $productA["price"]."円" ?></p>
+            <input min="0" class="item-number" type="number" value="0">
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-image" src="<?php echo $productB["image"] ?>" alt="">
+          <p class="card-title"><?php echo $productB["name"] ?></p>
+          <div class="flex justify-between">
+            <p class="card-price"><?php echo $productB["price"]."円" ?></p>
             <input min="0" class="item-number" type="number" value="0">
           </div>
         </div>
