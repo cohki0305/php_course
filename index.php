@@ -1,4 +1,5 @@
 <?php require_once 'products.php' ?>
+<?php require_once 'functions.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@
         <img class="card-image" src="<?php echo $product["image"] ?>" alt="">
         <p class="card-title"><?php echo $product["name"] ?></p>
         <div class="flex justify-between">
-          <p class="card-price"><?php echo $product["price"]."円" ?></p>
+          <p class="card-price"><?php echo calPriceIncludedTax($product["price"])."円" ?></p>
           <input min="0" class="item-number" type="number" value="0">
         </div>
       </div>
