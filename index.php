@@ -13,21 +13,21 @@
   <div class="container">
     <div class="app-container">
       <h1 class="title">DailyTrial Shopping</h1>
-      <div class="cards-container">
-      <?php foreach($products as $product): ?>
-      <div class="card">
-        <img class="card-image" src="<?php echo $product["image"] ?>" alt="">
-        <p class="card-title"><?php echo $product["name"] ?></p>
-        <div class="flex justify-between">
-          <p class="card-price"><?php echo displayPrice($product["price"]) ?></p>
-          <input min="0" class="item-number" type="number" value="0">
+      <form method="post" action="cart.php">
+        <div class="cards-container">
+        <?php foreach($products as $product): ?>
+        <div class="card">
+          <img class="card-image" src="<?php echo $product["image"] ?>" alt="">
+          <p class="card-title"><?php echo $product["name"] ?></p>
+          <div class="flex justify-between">
+            <p class="card-price"><?php echo displayPrice($product["price"]) ?></p>
+            <input min="0" class="item-number" type="number" name="<?php echo $product["id"]; ?>" value="0">
+          </div>
         </div>
-      </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
+      </form>
       <div class="btn-footer bg-white">
-        <div class="cart-btn">
-          カートに追加
-        </div>
+        <input class="cart-btn" type="submit" name="submit" value="カートに追加" />
       </div>
     </div>
   </div>
