@@ -24,7 +24,7 @@
         </div>
       </div>
       <?php endforeach; ?>
-      <div class="btn-footer">
+      <div class="btn-footer bg-white">
         <div class="cart-btn">
           カートに追加
         </div>
