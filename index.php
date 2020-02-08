@@ -11,11 +11,18 @@
     <div class="app-container">
       <h1 class="title">DailyTrial Shopping</h1>
       <div class="cards-container">
+        <?php
+          $product = [
+            "name" => "アボカド",
+            "price" => 230,
+            "image" => "./images/image_1.jpg"
+          ]
+        ?>
         <div class="card">
-          <img class="card-image" src="./images/image_1.jpg" alt="">
-          <p class="card-title">アボカド</p>
+          <img class="card-image" src="<?php echo $product["image"] ?>" alt="">
+          <p class="card-title"><?php echo $product["name"] ?></p>
           <div class="flex justify-between">
-            <p class="card-price">230円</p>
+            <p class="card-price"><?php echo $product["price"]."円" ?></p>
             <input min="0" class="item-number" type="number" value="0">
           </div>
         </div>
