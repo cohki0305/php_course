@@ -28,6 +28,16 @@
     public function getId() {
       return $this->id;
     }
+
+    private function calPriceIncludedTax() {
+      $taxRate = 0.1;
+      return $this->price + $this->price * $taxRate;
+    }
+
+    public function displayPrice() {
+      $priceIncludedTax = $this->calPriceIncludedTax();
+      return $priceIncludedTax."円";
+    }
   }
   // construct は class から インスタンス を作るときに使う
 ?>
