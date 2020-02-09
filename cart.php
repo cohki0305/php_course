@@ -21,6 +21,7 @@
       <h1 class="title">Shopping Cart</h1>
       <div class="carts-container">
         <?php foreach($products as $product): ?>
+        <?php if ($_POST[$product->getId()] > 0): ?>
         <div class="cart-item">
           <div class="flex">
             <img class="cart-item-img" src="<?php echo $product->getImage(); ?>">
@@ -30,6 +31,7 @@
             </div>
           </div>
         </div>
+        <?php endif; ?>
         <?php endforeach; ?>
       </div>
       <div class="btn-footer bg-gray">
