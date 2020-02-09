@@ -14,7 +14,7 @@
         <p class="title">決済が完了しました</p>
       </div>
       <div class="btn-footer bg-gray">
-        <a class="checkout-btn">
+        <a href="/" class="checkout-btn">
           トップに戻る
         </a>
       </div>
