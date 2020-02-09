@@ -1,9 +1,8 @@
 <?php require_once 'products.php' ?>
 <?php
-  $sum = 0;
+  require_once 'classes/cart.php';
   foreach($products as $product) {
-    $price = $product->getPrice() * $_POST[$product->getId()];
-    $sum = $sum + $price;
+    Cart::add($product, $_POST[$product->getId()]);
   }
 ?>
 
@@ -35,7 +34,7 @@
         <?php endforeach; ?>
       </div>
       <div class="btn-footer bg-gray">
-        <input class="checkout-btn flex justify-between" value="<?php echo $sum."円を決済する";?>">
+        <input class="checkout-btn flex justify-between" value="<?php echo Cart::calTotalPrice()."円を決済する";?>">
       </div>
     </div>
   </div>
