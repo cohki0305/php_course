@@ -1,5 +1,9 @@
 <?php require_once 'products.php' ?>
 <?php require_once 'functions.php' ?>
+<?php
+  require_once 'product.php';
+  $banana = new Product('banana')
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +16,7 @@
 <body>
   <div class="container">
     <div class="app-container">
-      <h1 class="title">DailyTrial Shopping</h1>
+      <h1 class="title">DailyTrial Shopping <?php echo $banana->name ?></h1>
       <form method="post" action="cart.php">
         <div class="cards-container">
         <?php foreach($products as $product): ?>
