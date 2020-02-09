@@ -2,7 +2,8 @@
 <?php require_once 'functions.php' ?>
 <?php
   require_once 'product.php';
-  $banana = new Product('banana')
+  $banana = new Product('banana');
+  $banana->name = 'apple';
 ?>
 
 <!DOCTYPE html>
