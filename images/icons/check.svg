@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icon/Check-Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34,0 C15.3,0 0,15.3 0,34 C0,52.7 15.3,68 34,68 C52.7,68 68,52.7 68,34 C68,15.3 52.7,0 34,0 L34,0 Z M34,61.2 C19.006,61.2 6.8,48.994 6.8,34 C6.8,19.006 19.006,6.8 34,6.8 C48.994,6.8 61.2,19.006 61.2,34 C61.2,48.994 48.994,61.2 34,61.2 L34,61.2 Z M49.606,18.972 L27.2,41.378 L18.394,32.606 L13.6,37.4 L27.2,51 L54.4,23.8 L49.606,18.972 Z" id="path-1"></path>
+    </defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="24-Success" transform="translate(-154.000000, -264.000000)">
+            <g id="Main" transform="translate(48.000000, 264.000000)">
+                <g id="Icon/Check-Circle" transform="translate(106.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#61D9D4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

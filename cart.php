@@ -33,9 +33,11 @@
         <?php endif; ?>
         <?php endforeach; ?>
       </div>
-      <div class="btn-footer bg-gray">
-        <input class="checkout-btn flex justify-between" value="<?php echo Cart::calTotalPrice()."円を決済する";?>">
-      </div>
+      <form method="post" action="payment.php">
+        <div class="btn-footer bg-gray">
+          <input type="submit" class="checkout-btn flex justify-between" value="<?php echo Cart::calTotalPrice()."円を決済する";?>">
+        </div>
+      </form>
     </div>
   </div>
 </body>

@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <div class="app-container">
-      <h1 class="title">DailyTrial Shopping></h1>
+      <h1 class="title">DailyTrial Shopping</h1>
       <form method="post" action="cart.php">
         <div class="cards-container">
         <?php foreach($products as $product): ?>
